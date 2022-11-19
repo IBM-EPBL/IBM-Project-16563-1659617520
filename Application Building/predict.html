@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="predict.css">
+    <title>predict</title>
+</head>
+
+<body>
+    <section class="header">
+    <nav>
+        <a href="homepage.html"><img src="image/logo.jpg" class="logo" width="200px"></a>
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="predict.html">PREDICT</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <img src="image/user.png" class="user-pic" onclick="toggleMenu()">
+                
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="image/use.png" width="100px">
+                            <h3>Four Leaf Clover</h3>
+                        </div>    
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/profile.png">
+                            <p>Edit profile</p>
+                            <span>></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/setting.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/help.png">
+                            <p>Help & Support</p>
+                            <span>></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/logout.png">
+                            <p>Log-Out</p>
+                            <span>></span> 
+                        </a>
+                    </div>
+                </div>
+    </nav>    
+    <div class="menu">
+        <h2> Plant Disease Prediction </h2>
+        <div class="container">
+            <div class="card">
+                <form>
+                    <h3> Upload the image ! <i class="fa fa-upload" aria-hidden="true"></i></h3>
+                    <br>
+                    <h4> Category (Fruit/Veg) -</h4>
+                    <br>
+                    <label class="lab">
+                        <select name="select Fruit/Veg" id="plant">
+                        <option value="-/-" id="null">-/-</option>    
+                        <option value="Fruit" id="fruit">Fruit</option>
+                        <option value="Vegitable" id="veg">Vegitable</option>
+                        </select>
+                    </label>
+                    <br><br><br>
+                    <input id="default-btn" type="file" name="" onchange="document.getElementById('output').src=window.URL.createObjectURL(this.files[0])">
+                    <img src=""  id="output">
+                    <br><br><br>
+                    <a href="result.html" class="predict-btn">PREDICT</a>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+        function display(){
+            document.location.href="result.html";
+        }
+    </script> 
+</section>
+</body>
+</html>
