@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Result - plant</title>
+        <link rel="stylesheet" href="result.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,300;1,400;1,600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <a href="homepage.html"><img src="image/logo.jpg" class="logo" width="20px"></a>
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="predict.html">PREDICT</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                </ul>    
+                <img src="image/user.png" class="user-pic" onclick="toggleMenu()">
+                
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="image/use.png" width="100px">
+                            <h3>Four Leaf Clover</h3>
+                        </div>    
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/profile.png">
+                            <p>Edit profile</p>
+                            <span>></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/setting.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/help.png">
+                            <p>Help & Support</p>
+                            <span>></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="image/logout.png">
+                            <p>Log-Out</p>
+                            <span>></span> 
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <h1>Result - </h1>
+            <img src="image/peach.JPG" >
+            
+            <div class="row">
+                <div class="about-col">
+                    <h2>Corp : Peach  </h2>
+                    <h2>Disease : Bacterial Spot </h2>
+                    <h3>Cause </h3><br>
+                    <p>    
+                        Bacterial spot is an important disease of peaches, nectarines, apricots, and plums caused by Xanthomonas arboricola pv. pruni (XAP), 
+                        formerly Xanthomonas campestris pv. pruni. The disease's symptoms include fruit spots, leaf spots and twig cankers.   
+                        The disease is caused by four species of Xanthomonas (X. euvesicatoria, X. gardneri, X. perforans, and X. vesicatoria).
+                        In North Carolina, X. perforans is the predominant species associated with bacterial spot on tomato and X. euvesicatoria is the predominant species associated with the disease on pepper.
+                        All four bacteria are strictly aerobic, gram-negative rods with a long whip-like flagellum (tail) that allows them to move in water, which allows them to invade wet plant tissue and
+                        cause infection.   
+                    </p>
+                    <h3>Recommended Fertilizer</h3>
+                    <p>
+                        White nectarine<br>
+                        Compounds available for use on peach and nectarine for bacterial spot include copper, oxytetracycline (Mycoshield and generic equivalents), and syllit+captan .
+                    </p>    
+                </div> 
+        </div>
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>     
+        
+
+    </body>
+</html>
